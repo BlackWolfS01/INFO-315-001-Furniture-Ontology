@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--  
+Version 0.01
+-->
+
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://dublincore.org/2012/06/14/dcterms.rdf"
+	xmlns:fur="http://www.furniture.com/furniture-ontology#">
+	
+	<rdf:Description rdf:about="http://www.furniture.com/furniture-ontology#">
+		<dc:title>Furniture Ontology</dc:title>
+		<dc:contributor>INFOST315-001, Spring 2019 class</dc:contributor>
+		<dc:description>A simple furniture ontology. Based on function, following Group 3's outline.</dc:description>
+	</rdf:Description>
+	<rdfs:Class rdf:ID="Furniture">
+		<dc:description>A type of moveable object used to control how space is used.</dc:description>
+	</rdfs:Class>	
+	<rdfs:Class rdf:ID="SeatingFurniture">
+		<dc:description>Furniture designed for sitting.</dc:description>
+		<rdfs:subClassOf rdf:resource="#Furniture" />
+	</rdfs:Class>
+</rdf:RDF>
